@@ -1,6 +1,6 @@
 # Mindfulness Therapy Frontend
 
-React frontend for the Mindfulness Therapy application.
+React frontend for the Mindfulness Therapy application
 
 ## Getting Started
 
