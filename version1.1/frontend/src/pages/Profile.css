@@ -1,0 +1,116 @@
+.profile-page {
+  padding: 20px 0;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.profile-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: var(--box-shadow);
+}
+
+.profile-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+/* User Info Section */
+.user-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.info-item .label {
+  font-weight: 600;
+  width: 150px;
+  color: var(--text-light);
+}
+
+.info-item .value {
+  flex: 1;
+  color: var(--text-color);
+}
+
+/* Settings Section */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-group label {
+  margin-bottom: 0;
+}
+
+/* Data Management Section */
+.data-management-info {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.data-management-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+  .profile-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} 

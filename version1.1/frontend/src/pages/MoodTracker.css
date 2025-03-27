@@ -1,0 +1,294 @@
+.mood-tracker-page {
+  padding: 2rem 0;
+}
+
+.mood-tracker-page .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  background-color: #5d78ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  max-width: fit-content;
+}
+
+.btn-primary:hover {
+  background-color: #4a66e0;
+}
+
+.error-banner {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #d32f2f;
+}
+
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #5d78ff;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.empty-state h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.empty-state p {
+  color: #666;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+}
+
+.mood-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .mood-content {
+    flex-direction: row;
+  }
+  
+  .mood-chart-container {
+    flex: 3;
+  }
+  
+  .mood-entries-list {
+    flex: 2;
+  }
+}
+
+.mood-chart-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.period-selectors {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.period-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.period-btn.active {
+  background-color: #5d78ff;
+  color: white;
+  border-color: #5d78ff;
+}
+
+.chart-container {
+  height: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.chart-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  color: #666;
+}
+
+.mood-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 120px;
+  background-color: #f5f7ff;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.mood-entries-list {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.mood-entries-list h2 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.mood-entry-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mood-entry-card:last-child {
+  margin-bottom: 0;
+}
+
+.mood-entry-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.mood-score {
+  display: flex;
+  align-items: center;
+}
+
+.score-value {
+  font-size: 1.3rem;
+  font-weight: 600;
+  background-color: #5d78ff;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.score-label {
+  font-weight: 500;
+}
+
+.entry-date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.mood-notes {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.mood-notes p {
+  margin: 0;
+  color: #444;
+}
+
+.mood-factors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.factor {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.3rem;
+}
+
+.factor-label {
+  color: #666;
+}
+
+.factor-value {
+  font-weight: 500;
+}
+
+.view-all-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.view-all-link a {
+  color: #5d78ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-all-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+} 

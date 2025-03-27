@@ -1,0 +1,149 @@
+.therapy-history-page {
+  animation: fadeIn 0.5s ease-in;
+  padding: 20px 0;
+}
+
+.therapy-history-header {
+  margin-bottom: 30px;
+}
+
+.therapy-history-header h1 {
+  margin-bottom: 8px;
+}
+
+.therapy-history-header p {
+  color: var(--text-light);
+}
+
+.loading-indicator {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-light);
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 12px 16px;
+  margin: 20px 0;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.therapy-sessions-list {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.therapy-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f5f7fa;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.session-count {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.no-sessions-message {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.no-sessions-message p {
+  margin-bottom: 15px;
+}
+
+.no-sessions-message .btn {
+  margin-top: 10px;
+}
+
+.sessions-table {
+  width: 100%;
+}
+
+.sessions-table-header {
+  display: flex;
+  padding: 12px 20px;
+  font-weight: 600;
+  background-color: #f5f7fa;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.session-row {
+  display: flex;
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+}
+
+.session-row:last-child {
+  border-bottom: none;
+}
+
+.session-row:hover {
+  background-color: #f9f9f9;
+}
+
+.title-col {
+  flex: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.date-col {
+  flex: 2;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.action-col {
+  flex: 1;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .sessions-table-header, .session-row {
+    padding: 12px 15px;
+  }
+  
+  .title-col {
+    flex: 2;
+  }
+  
+  .date-col {
+    flex: 1.5;
+  }
+  
+  .action-col {
+    flex: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .sessions-table-header {
+    display: none;
+  }
+  
+  .session-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .title-col, .date-col, .action-col {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .action-col {
+    margin-top: 5px;
+  }
+} 
