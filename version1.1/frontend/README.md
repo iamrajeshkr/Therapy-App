@@ -31,7 +31,7 @@ npm start
 yarn start
 ```
 
-This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
 
 ## Connecting to the Backend
 
@@ -90,7 +90,7 @@ This frontend is built with:
 
 ## State Management
 
-This project uses Redux for state management with the following slices:
+This project uses Redux for state management with the following slices
 - auth: User authentication state
 - chat: Chat history and current conversation
 - mood: Mood tracking data
